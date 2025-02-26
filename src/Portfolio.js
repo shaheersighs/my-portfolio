@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./styles.css"; // Import the styles
 import project1 from "./images/project1.jpg";
 import project2 from "./images/project2.jpg";
@@ -10,44 +10,48 @@ import profileImage from "./images/profile.jpg";
 import resumeIcon from "./images/resume-icon.png";
 
 export default function Portfolio() {
-  // Step 1: List of words to cycle through
-  const words = ["wrangling data", "scribbling code", "crafting models"];
-  const [currentWord, setCurrentWord] = useState(words[0]);
+  // Step 1: Store words in a `useRef` so it remains stable across renders
+  const words = useRef(["wrangling data", "scribbling code", "crafting models"]);
+  const [currentWord, setCurrentWord] = useState(words.current[0]);
+  const wordRef = useRef(null); // Reference for smooth transition
 
-  // Step 2: Cycle through words every 2 seconds
   useEffect(() => {
     let index = 0;
+
     const interval = setInterval(() => {
-      // Fade Out
-      document.querySelector(".word-transition").style.opacity = "0";
-      document.querySelector(".word-transition").style.transform = "translateY(-10px)";
-  
+      if (wordRef.current) {
+        // Fade Out
+        wordRef.current.style.opacity = "0";
+        wordRef.current.style.transform = "translateY(-10px)";
+      }
+
       setTimeout(() => {
         // Change Word
-        index = (index + 1) % words.length;
-        setCurrentWord(words[index]);
-  
+        index = (index + 1) % words.current.length;
+        setCurrentWord(words.current[index]);
+
         // Fade In
-        document.querySelector(".word-transition").style.opacity = "1";
-        document.querySelector(".word-transition").style.transform = "translateY(0)";
+        if (wordRef.current) {
+          wordRef.current.style.opacity = "1";
+          wordRef.current.style.transform = "translateY(0)";
+        }
       }, 300); // Wait for fade-out before changing text
     }, 2000); // Change every 2 seconds
-  
+
     return () => clearInterval(interval);
-  }, [words]);
+  }, []); // ✅ Empty dependency array to avoid re-renders
 
   return (
     <div className="main-container">  
-      {/* Holds both containers */}
       {/* Portfolio Section - Left Side */}
       <div className="portfolio-container">
         <h1 className="main-heading">Hi, I'm Shaheer Khan.</h1>
         <h2 className="subheading">
-          I like <span className="word-transition">{currentWord}</span> for fun, wby?
+          I like <span className="word-transition" ref={wordRef}>{currentWord}</span> for fun, wby?
         </h2>
         <hr className="section-divider" />  {/* Divider Line */}
 
-        {/* about me Section */}
+        {/* About Me Section */}
         <h2 className="section-heading">About Me</h2>
         <p className="section-description">
           I'm a final-year Data Engineering student who loves solving problems 
@@ -55,7 +59,8 @@ export default function Portfolio() {
           I enjoy learning new technologies and pushing boundaries. Find my resume
           in the links below.
         </p>
-        {/* skills Section */}
+
+        {/* Skills Section */}
         <h2 className="section-heading">Some of my Skills</h2>
         <p className="section-description">
           I have fluency in Python, JavaScript, and R.  
@@ -114,6 +119,7 @@ export default function Portfolio() {
     </div>
   );
 }
+
 
 
 
