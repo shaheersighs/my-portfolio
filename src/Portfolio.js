@@ -9,9 +9,6 @@ import project6 from "./images/project6.jpg";
 import profileImage from "./images/profile.jpg";
 import resumeIcon from "./images/resume-icon.png";
 
-
-
-
 export default function Portfolio() {
   // Step 1: List of words to cycle through
   const words = ["wrangling data", "scribbling code", "crafting models"];
@@ -37,7 +34,7 @@ export default function Portfolio() {
     }, 2000); // Change every 2 seconds
   
     return () => clearInterval(interval);
-  }, []);
+  }, [words]);
 
   return (
     <div className="main-container">  
