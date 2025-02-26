@@ -168,6 +168,49 @@ body {
     align-self: left; /* Centers within the container */
     margin-left: -20px; /* Move slightly left */
 }
+/* Mobile View Fix */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack sections vertically */
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+        align-items: center; /* Center everything */
+    }
+
+    .portfolio-container, .projects-container {
+        width: 100%;
+        text-align: center; /* Center text */
+        align-items: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Make project buttons stack */
+        gap: 15px; /* Reduce gap for better spacing */
+    }
+
+    .project-box {
+        width: 90%; /* Make project buttons wider */
+        height: auto; /* Allow height to adjust */
+        padding: 30px; /* Adjust padding */
+    }
+
+    .profile-picture {
+        width: 180px; /* Adjust size */
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    .contact-links {
+        flex-wrap: wrap; /* Allow icons to wrap */
+        justify-content: center;
+    }
+
+    .contact-item {
+        margin: 10px;
+    }
+}
+
 
 
 
