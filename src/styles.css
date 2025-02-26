@@ -184,6 +184,22 @@ body {
         align-items: center;
     }
 
+    /* Move Profile Picture Right Below the Subheading */
+    .profile-picture {
+        width: 180px; /* Adjust size */
+        height: 180px;
+        border-radius: 50%;
+        margin-top: 15px; /* Space from subheading */
+        margin-bottom: 20px; /* Space before the next section */
+    }
+
+    /* Ensure Subheading and Profile are Together */
+    .subheading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr; /* Make project buttons stack */
         gap: 15px; /* Reduce gap for better spacing */
@@ -195,12 +211,6 @@ body {
         padding: 30px; /* Adjust padding */
     }
 
-    .profile-picture {
-        width: 180px; /* Adjust size */
-        height: 180px;
-        margin-bottom: 20px;
-    }
-
     .contact-links {
         flex-wrap: wrap; /* Allow icons to wrap */
         justify-content: center;
@@ -210,6 +220,7 @@ body {
         margin: 10px;
     }
 }
+
 
 
 
