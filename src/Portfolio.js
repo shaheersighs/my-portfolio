@@ -11,7 +11,7 @@ import resumeIcon from "./images/resume-icon.png";
 
 export default function Portfolio() {
   // Step 1: Store words in a `useRef` so it remains stable across renders
-  const words = useRef(["wrangling data", "scribbling code", "crafting models"]);
+  const words = useRef(["wrangling data", "scribbling code", "training models"]);
   const [currentWord, setCurrentWord] = useState(words.current[0]);
   const wordRef = useRef(null); // Reference for smooth transition
 
