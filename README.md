@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-This is my personal portfolio website, designed to showcase my skills, projects, and contact information in a clean, modern, and responsive layout. It's a single-page website built with HTML and CSS and hosted using GitHub Pages.
+This is my personal portfolio website, designed to showcase my skills, projects, and contact information in a clean, modern, and responsive layout. It's a single-page website built with HTML and CSS and hosted netlify.
 
 ---
 
