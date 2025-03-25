@@ -24,8 +24,8 @@ This is my personal portfolio website, designed to showcase my skills, projects,
 
 - HTML5  
 - CSS3  
-- JavaScript (optional for effects)  
-- GitHub Pages (for hosting)
+- JavaScript  
+- React
 
 ---
 
