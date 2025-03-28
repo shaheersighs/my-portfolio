@@ -1,7 +1,9 @@
 /* Global Styles */
 body {
     font-family: "Arial", sans-serif;
-    background: linear-gradient(to right, #fdf8e8, #f5d6ba); /* Soft white to warm peach */
+    background-color:rgb(251, 251, 242);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.6) 0.9px, transparent 1px);
+    background-size: 33px 33px;
     color: #333;
     margin: 0;
     padding: 0;
@@ -33,6 +35,7 @@ body {
     text-align: left;
     margin-top: 80px;
     margin-bottom: 5px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 /* Subheading Style */
 .subheading {
@@ -42,6 +45,7 @@ body {
     text-align: left;
     margin-top: 5px;
     margin-bottom: 60px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 /* Transition Effect for Changing Text */
 .word-transition {
@@ -53,14 +57,15 @@ body {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     opacity: 1;
     position: relative;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .section-divider {
     width: 350%;  /* Full width */
     max-width: 1100px; /* Limits width to match content */
     border: none;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.2); /* Light black */
-    margin: 40px 0; /* Centered within the gap */
+    height: 1.4px;
+    background-color: rgb(0, 0, 0); /* Light black */
+    margin: 33px 0; /* Centered within the gap */
 }
 /* Section Headings */
 .section-heading {
@@ -68,6 +73,7 @@ body {
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 0px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 /* Section Descriptions */
 .section-description {
@@ -77,6 +83,7 @@ body {
     max-width: 600px;
     text-align: left;
     margin-top: 15px; /* Ensures minimal gap between heading and text */
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 /* Contact Links - Aligns Icons Horizontally */
 .contact-links {
@@ -106,33 +113,34 @@ body {
 }
 /* Projects Container - Right Section */
 .projects-container {
-    width: 40%; /* Adjusted width to fit the 3x2 grid */
+    width: 30%; /* Adjusted width to fit the 3x2 grid */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-right: 2%; /* Ensures spacing */
     padding-left: 10%; /* Ensures spacing */
-    margin-top: 3vh; /* Aligns with the first main heading */
+    margin-top: 0vh; /* Aligns with the first main heading */
 }
 /* Projects Heading */
 .projects-heading {
     font-size: 25px;
     font-weight: bold;
     color: #333;
-    margin-top: 122px; /* Matches "About Me" */
-    margin-bottom: 10px;
+    margin-top: 65px; /* Matches "About Me" */
+    margin-bottom: 0px; /* ↓ Reduced gap */
     text-align: right;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 /* Projects Grid Layout */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(3, 1fr); /* 3 rows */
-    gap: 25px 5px; /* Increased spacing */
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 100px;
+    grid-template-columns: 250px 250px; /* Two fixed-width columns */
+    gap: 25px; /* Fixed spacing between all items */
+    justify-content: center; /* Center the grid within the container */
+    margin-top: 0px;
+    margin-bottom: 200px;
 }
+
 /* Individual Project Box */
 .project-box {
     background-size: cover;
@@ -142,29 +150,32 @@ body {
     padding: 60px; /* Increased padding */
     text-align: center;
     font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
-    color: white;
-    width: 100px; /* Set a fixed width */
+    color: rgb(255, 255, 255);
+    width: 80px; /* Set a fixed width */
     height: 60px; /* Set a fixed height to make it square */
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
+
 /* Hover Effect - Slightly Darker */
 .project-box:hover {
     transform: scale(1.05);
     filter: brightness(85%); /* Subtle darkening */
 }
+
 /* Profile Picture - Circular Image Above Projects */
 .profile-picture {
-    width: 230px;  /* Adjust size */
-    height: 230px;
+    width: 200px;  /* Adjust size */
+    height: 200px;
     border-radius: 50%; /* Makes it a circle */
     object-fit: cover; /* Ensures the image fits without distortion */
-    border: 4px solid white; /* Optional: Adds a border */
-    margin-bottom: 0px; /* Space between the image and heading */
+    border: 0.5px solid rgb(255, 255, 255); /* Optional: Adds a border */
+    margin-top: 28px; /* Space between the image and heading */
     align-self: left; /* Centers within the container */
     margin-left: -20px; /* Move slightly left */
 }

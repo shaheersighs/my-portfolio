@@ -35,11 +35,11 @@ export default function Portfolio() {
           wordRef.current.style.opacity = "1";
           wordRef.current.style.transform = "translateY(0)";
         }
-      }, 300); // Wait for fade-out before changing text
+      }, 300); 
     }, 2000); // Change every 2 seconds
 
     return () => clearInterval(interval);
-  }, []); // ✅ Empty dependency array to avoid re-renders
+  }, []); // Empty dependency array to avoid re-renders
 
   return (
     <div className="main-container">  
@@ -63,11 +63,13 @@ export default function Portfolio() {
         {/* Skills Section */}
         <h2 className="section-heading">Some of my Skills</h2>
         <p className="section-description">
-          I have fluency in Python, JavaScript, and R.  
-          When it comes to databases, I can navigate MySQL and MongoDB like a seasoned traveler.  
-          Networking? I’ve got CISCO covered.  
-          For cloud computing, I excel in Azure.  
-          And if we’re talking about the big leagues—Machine Learning, AI, and NLP—let’s just say, I’m always training my models to be smarter. 
+        I have strong proficiency in Python, JavaScript, and R, with a solid foundation in software development 
+        and scripting. My experience spans across both relational and non-relational databases, 
+        including MySQL and MongoDB, enabling efficient data modeling and management. 
+        I’m well-versed in computer networking fundamentals, with hands-on exposure to CISCO technologies. 
+        My core focus lies in Machine Learning, AI, and Natural Language Processing, where I actively build 
+        and train intelligent systems. With a passion for Data Engineering, I enjoy designing pipelines, 
+        wrangling large datasets, and optimizing data workflows to drive meaningful insights and automation. 
         </p>
 
         {/* Contact Section */}
@@ -104,13 +106,13 @@ export default function Portfolio() {
       <div className="projects-container">
         {/* Profile Picture Above Projects */}
         <img src={profileImage} alt="Profile" className="profile-picture" />
-        <h2 className="projects-heading">Some of my Projects</h2>
+        <h2 className="projects-heading">My Projects</h2>
 
         {/* Grid Layout for Project Blocks */}
         <div className="projects-grid">
           <a href="https://github.com/shaheersighs/Flight-Management-System" className="project-box" style={{ backgroundImage: `url(${project1})` }}>Flight Management System</a>
-          <a href="https://github.com/shaheersighs/Fake-Currency-Detection---MGP" className="project-box" style={{ backgroundImage: `url(${project2})` }}>Fake Currency Detection</a>
-          <a href="https://github.com/shaheersighs/project3" className="project-box" style={{ backgroundImage: `url(${project3})` }}>Resume Screening Tool</a>
+          <a href="https://github.com/shaheersighs/Counterfeit-Currency-Detection" className="project-box" style={{ backgroundImage: `url(${project2})` }}>Counterfeit Currency Detection</a>
+          <a href="https://github.com/shaheersighs/Tech-Resumes-Analysis" className="project-box" style={{ backgroundImage: `url(${project3})` }}>Tech Resumes Analysis System</a>
           <a href="https://github.com/shaheersighs/project4" className="project-box" style={{ backgroundImage: `url(${project4})` }}>Project 4</a>
           <a href="https://github.com/shaheersighs/project5" className="project-box" style={{ backgroundImage: `url(${project5})` }}>Project 5</a>
           <a href="https://github.com/shaheersighs/project6" className="project-box" style={{ backgroundImage: `url(${project6})` }}>Project 6</a>
