@@ -96,7 +96,7 @@ export default function Portfolio() {
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="Twitter" className="contact-icon" />
           </a>
 
-          <a href="/resume.pdf" download className="contact-item">
+          <a href="/shaheer's_resume.pdf" download className="contact-item">
             <img src={resumeIcon} alt="Resume" className="contact-icon" />
           </a>
         </div>

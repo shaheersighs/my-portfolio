@@ -2,8 +2,8 @@
 body {
     font-family: "Arial", sans-serif;
     background-color:rgb(251, 251, 242);
-    background-image: radial-gradient(rgba(0, 0, 0, 0.6) 0.9px, transparent 1px);
-    background-size: 36px 36px;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.8) 1.0px, transparent 0.8px);
+    background-size: 43px 43px;
     color: #333;
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ body {
     flex: 1; /* Ensures both take equal height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Balances url(https://chatgpt.com/g/g-p-67bc6a1c72b08191b400410f5c74f5b9-portfolio-website/project)content */
+    justify-content: space-between; 
     min-height: 100%; /* Ensures equal height */
 }
 /* Centered Main Heading */
