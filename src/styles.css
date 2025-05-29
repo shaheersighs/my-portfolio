@@ -153,7 +153,8 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8), 0 0 4px #e9e1cc;
+    color: rgb(242, 240, 238);
     width: 80px; /* Set a fixed width */
     height: 60px; /* Set a fixed height to make it square */
     display: flex;

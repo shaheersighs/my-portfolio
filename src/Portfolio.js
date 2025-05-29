@@ -113,9 +113,9 @@ export default function Portfolio() {
           <a href="https://github.com/shaheersighs/Flight-Management-System" className="project-box" style={{ backgroundImage: `url(${project1})` }}>Flight Management System</a>
           <a href="https://github.com/shaheersighs/Counterfeit-Currency-Detection" className="project-box" style={{ backgroundImage: `url(${project2})` }}>Counterfeit Currency Detection</a>
           <a href="https://github.com/shaheersighs/Tech-Resumes-Analysis" className="project-box" style={{ backgroundImage: `url(${project3})` }}>Tech Resumes Analysis System</a>
-          <a href="https://github.com/shaheersighs/project4" className="project-box" style={{ backgroundImage: `url(${project4})` }}>Project 4</a>
-          <a href="https://github.com/shaheersighs/project5" className="project-box" style={{ backgroundImage: `url(${project5})` }}>Project 5</a>
-          <a href="https://github.com/shaheersighs/project6" className="project-box" style={{ backgroundImage: `url(${project6})` }}>Project 6</a>
+          <a href="https://github.com/shaheersighs/Brain-Tumour-MRI-Classification" className="project-box" style={{ backgroundImage: `url(${project4})` }}>Brain Tumour MRI Classification</a>
+          <a href="https://github.com/shaheersighs/Network-Anomaly-Detection-Using-Clustering-methods" className="project-box" style={{ backgroundImage: `url(${project5})` }}>Network Anomaly Detection</a>
+          <a href="https://github.com/shaheersighs/Activity-Detection-using-Machine-Learning" className="project-box" style={{ backgroundImage: `url(${project6})` }}>Activity Detection using Machine Learning</a>
         </div>
       </div>
     </div>
